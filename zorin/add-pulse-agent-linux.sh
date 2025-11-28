@@ -13,7 +13,7 @@ if [ -z "$VERSION" ]; then
     exit 1
 fi
 
-REPO_DIR="/home/njeudy/dev/medulla/zorin/${VERSION}"
+REPO_DIR="./${VERSION}"
 
 if [ ! -d "$REPO_DIR" ]; then
     echo "Erreur: Le dépôt Zorin ${VERSION} n'existe pas"

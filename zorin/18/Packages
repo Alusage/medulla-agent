@@ -1,3 +1,24 @@
+Package: pulse-agent-installers
+Architecture: all
+Version: 2.1.5-1
+Priority: optional
+Section: python
+Source: medulla-agent
+Maintainer: Nicolas Lécureuil <nicolas.lecureuil@siveo.net>
+Installed-Size: 3298
+Pre-Depends: pulse-filetree-generator
+Depends: medulla-agent-deps (>= 1.8), dos2unix, unzip, zip, nsis-plugins-accesscontrol, nsis-plugins-inetc, nsis-plugins-pwgen, nsis-plugins-zipdll, uuid, nsis-plugins-textreplace, pulse-kiosk-agent-deps, xz-utils, dpkg-dev, debhelper (>= 9), python3-all-dev (>= 2.6.6-3~), build-essential, createrepo-c, crudini, dh-python
+Breaks: pulse-xmppmaster-agentplugins (<< 2.0.7)
+Replaces: pulse-xmppmaster-agentplugins
+Filename: ./pulse-agent-installers_2.1.5-1_all.deb
+Size: 1525598
+MD5sum: 207804f5e755b2d7b232de2163469de2
+SHA1: 0434937dfaa2d1b4e4237e30f4d6a752d0708227
+SHA256: 3cd0ee9b47afaffbc56d8933f8a09bae7bc611563f2779e93e1ca028fe86ff41
+SHA512: 927bdff6b453025516d01aaa09f1960d132eca9b717376b962914728e8da2db468494766c85f416089c149a45b75ed7790915876b7a954d98e44be43ee81ea32
+Homepage: http://cyberelk.net/tim/software/pycups/
+Description: Pulse 2 Xmpp agent installer
+
 Package: pulse-agent-linux
 Architecture: all
 Version: 2.2.0-1
@@ -14,4 +35,59 @@ SHA256: 2256113deb4c1a327816265d6ae7968948251a158ddfacecc9f09d34eb243cf5
 SHA512: e879602d1c9618088b1a83ed587aef125bed8e27fd0c06e78e957aa2f90b0fa4e58ef5ecae5ed6950d6819502c1d8cb7d2d82899281ee79c65331c5e7fd65198
 Homepage: http://www.siveo.net/
 Description: Linux installer for Pulse XMPP agent
+
+Package: pulse-xmpp-agent-relay
+Architecture: all
+Version: 2.1.5-1
+Priority: optional
+Section: python
+Source: medulla-agent
+Maintainer: Nicolas Lécureuil <nicolas.lecureuil@siveo.net>
+Installed-Size: 2010
+Depends: python3-slixmpp, python3-netifaces, python3-pycurl, python3-croniter, python3-psutil, python3-pycryptodome, python3-lxml, python3-requests, python3-pyinotify, python3-wakeonlan, python3-cherrypy3, net-tools, jq, python3-bsddb3, python3-distro, python3-posix-ipc, python3-mysqldb, python3-lmdb, python3-xmltodict, python3-netaddr
+Breaks: pulse-agent-installers (<< 1.9.1), pulse-xmpp-agent (<< 2.0.5), pulseagent-plugins-relay (<< 2.0.5)
+Replaces: pulse-agent-installers (<< 1.9.1), pulse-xmpp-agent, pulseagent-plugins-relay
+Filename: ./pulse-xmpp-agent-relay_2.1.5-1_all.deb
+Size: 291912
+MD5sum: f9acb712bbb4fd66ce6bb8f01ed5ed05
+SHA1: 2ae3d39ca52047b4cbc6feab1e21b3083e74080d
+SHA256: 273d45d3bdb001399a0a95770075caf4168def5dab577e75dcfbb916d1ec1fa8
+SHA512: 5c909a40b976934b9e5a19e5bdc776a4fa6a912b2c8b9e26d120b681f6afb6fa15a2daf02ba8ac72f42c6f51a569e8bcc66989d5d7e88d25fa4be159bdb3d438
+Homepage: http://cyberelk.net/tim/software/pycups/
+Description: Pulse xmpp agent
+
+Package: pulse-xmpp-master-substitute
+Architecture: all
+Version: 2.1.5-1
+Priority: optional
+Section: python
+Source: medulla-agent
+Maintainer: Nicolas Lécureuil <nicolas.lecureuil@siveo.net>
+Installed-Size: 3842
+Depends: jq, python3-xmltodict, python3-slixmpp, python3-netifaces, python3-croniter, python3-psutil, python3-pycryptodome, python3-posix-ipc, python3-sqlalchemy (>= 0.4), python3-geoip
+Filename: ./pulse-xmpp-master-substitute_2.1.5-1_all.deb
+Size: 332786
+MD5sum: b3a6a8e222d457cf8fb592beed2ea662
+SHA1: 3f2170396c0b3ce799e45e354ea5d913b17668e0
+SHA256: 6242e4734f23625d3e7d8bb85db02aa46b50f364df81a17428a865ca73fcbb1d
+SHA512: df5c0c40fbb8e6c5f815f80ffd6bc2fd1d1a7da2d5462baee27e9bb8a3726186517f0a6697021482548918a5d60fcacbb8648f098bc44f11c07a90ccaf6395c9
+Homepage: http://cyberelk.net/tim/software/pycups/
+Description: Pulse master agent substitute
+
+Package: pulse-xmppmaster-agentplugins
+Architecture: all
+Version: 2.1.5-1
+Priority: optional
+Section: python
+Source: medulla-agent
+Maintainer: Nicolas Lécureuil <nicolas.lecureuil@siveo.net>
+Installed-Size: 710
+Filename: ./pulse-xmppmaster-agentplugins_2.1.5-1_all.deb
+Size: 90030
+MD5sum: 59cbc0ff76e63c15398cd2028575aea5
+SHA1: c462d00c4cc5d100dde41c60d2ec649f76cf6dea
+SHA256: d12a74a5909b2636ebf1af0a1676cfc0a258de4f9c4d0bafce05c11e05a2f496
+SHA512: 9ba40c88f66c19f149b9a7367805a74e36fe2500bd8d3a03b46e97c67ea82feeb68018657cb2fce16c0a2125ccf89dab903966377b1f97dda012551a14242aa4
+Homepage: http://cyberelk.net/tim/software/pycups/
+Description: plugins for pulse xmppmaster
 
