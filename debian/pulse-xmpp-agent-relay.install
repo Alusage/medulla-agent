@@ -1,5 +1,4 @@
 usr/lib/python3/*-packages/pulse_xmpp_agent/lib
-usr/lib/python3/*-packages/pulse_xmpp_agent-*.egg-info/
 usr/lib/python3/*-packages/pulse_xmpp_agent/*.py*
 usr/lib/python3/*-packages/pulse_xmpp_agent/script
 usr/lib/python3/*-packages/pulse_xmpp_agent/pluginsrelay
