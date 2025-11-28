@@ -1,0 +1,17 @@
+Package: pulse-agent-linux
+Architecture: all
+Version: 2.2.0-1
+Priority: optional
+Section: python
+Maintainer: Nicolas Lécureuil <nicolas.lecureuil@siveo.net>
+Installed-Size: 102
+Depends: net-tools, fusioninventory-agent (>= 2.3), openssh-server, rsync, x11vnc, xrdp, apt-transport-https, python3-pip, sudo, syncthing, python3-yaml
+Filename: ./pulse-agent-linux_2.2.0-1_all.deb
+Size: 27388
+MD5sum: 833bec281f1d7ba2a3671e6a26393cfe
+SHA1: 5685ad98ceb74aa25d1905f9e3f235f13c1055bd
+SHA256: 2256113deb4c1a327816265d6ae7968948251a158ddfacecc9f09d34eb243cf5
+SHA512: e879602d1c9618088b1a83ed587aef125bed8e27fd0c06e78e957aa2f90b0fa4e58ef5ecae5ed6950d6819502c1d8cb7d2d82899281ee79c65331c5e7fd65198
+Homepage: http://www.siveo.net/
+Description: Linux installer for Pulse XMPP agent
+

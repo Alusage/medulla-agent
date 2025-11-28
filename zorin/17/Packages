@@ -1,0 +1,93 @@
+Package: pulse-agent-installers
+Architecture: all
+Version: 2.1.5-1
+Priority: optional
+Section: python
+Source: medulla-agent
+Maintainer: Nicolas Lécureuil <nicolas.lecureuil@siveo.net>
+Installed-Size: 3296
+Pre-Depends: pulse-filetree-generator
+Depends: medulla-agent-deps (>= 1.8), dos2unix, unzip, zip, nsis-plugins-accesscontrol, nsis-plugins-inetc, nsis-plugins-pwgen, nsis-plugins-zipdll, uuid, nsis-plugins-textreplace, pulse-kiosk-agent-deps, xz-utils, dpkg-dev, debhelper (>= 9), python3-all-dev (>= 2.6.6-3~), build-essential, createrepo-c, crudini, dh-python
+Breaks: pulse-xmppmaster-agentplugins (<< 2.0.7)
+Replaces: pulse-xmppmaster-agentplugins
+Filename: ./pulse-agent-installers_2.1.5-1_all.deb
+Size: 1524828
+MD5sum: 68ec9e1f2a5c6108854d892c9b815e69
+SHA1: 4db4af20724de8aa5a3e3bcfe0d1419494991bd2
+SHA256: 00816afd2616b419a6f685d0c0c203afc3bc4927c4c13ca479e132e61558bef4
+SHA512: 449fba0fc53b41c551765ee21566e9018df12e92de125bb811827d262c6523b46ebc50fe35141a27a285b8b5c32700b432e6c316e484e0de967e5b5aee4cf6e2
+Homepage: http://cyberelk.net/tim/software/pycups/
+Description: Pulse 2 Xmpp agent installer
+
+Package: pulse-agent-linux
+Architecture: all
+Version: 2.2.0-1
+Priority: optional
+Section: python
+Maintainer: Nicolas Lécureuil <nicolas.lecureuil@siveo.net>
+Installed-Size: 102
+Depends: net-tools, fusioninventory-agent (>= 2.3), openssh-server, rsync, x11vnc, xrdp, apt-transport-https, python3-pip, sudo, syncthing, python3-yaml
+Filename: ./pulse-agent-linux_2.2.0-1_all.deb
+Size: 27388
+MD5sum: 833bec281f1d7ba2a3671e6a26393cfe
+SHA1: 5685ad98ceb74aa25d1905f9e3f235f13c1055bd
+SHA256: 2256113deb4c1a327816265d6ae7968948251a158ddfacecc9f09d34eb243cf5
+SHA512: e879602d1c9618088b1a83ed587aef125bed8e27fd0c06e78e957aa2f90b0fa4e58ef5ecae5ed6950d6819502c1d8cb7d2d82899281ee79c65331c5e7fd65198
+Homepage: http://www.siveo.net/
+Description: Linux installer for Pulse XMPP agent
+
+Package: pulse-xmpp-agent-relay
+Architecture: all
+Version: 2.1.5-1
+Priority: optional
+Section: python
+Source: medulla-agent
+Maintainer: Nicolas Lécureuil <nicolas.lecureuil@siveo.net>
+Installed-Size: 2014
+Depends: python3-slixmpp, python3-netifaces, python3-pycurl, python3-croniter, python3-psutil, python3-pycryptodome, python3-lxml, python3-requests, python3-pyinotify, python3-wakeonlan, python3-cherrypy3, net-tools, jq, python3-bsddb3, python3-distro, python3-posix-ipc, python3-mysqldb, python3-lmdb, python3-xmltodict, python3-netaddr
+Breaks: pulse-agent-installers (<< 1.9.1), pulse-xmpp-agent (<< 2.0.5), pulseagent-plugins-relay (<< 2.0.5)
+Replaces: pulse-agent-installers (<< 1.9.1), pulse-xmpp-agent, pulseagent-plugins-relay
+Filename: ./pulse-xmpp-agent-relay_2.1.5-1_all.deb
+Size: 292604
+MD5sum: 0563510a16aadcb04fb010120db4af04
+SHA1: 60e060d2e7659a33691b5dda5ed4bbfa03439bc2
+SHA256: fcc858dc3afe3da30eb65178fd3fabb89a25b4b3c428ffad74ae57f92cfa88f2
+SHA512: dd4488c4db46cf8ae82777dbed2ffcd966c7cfaaf608eaf18d8ff5de48a6f188a1217eea8998051966f130e8a49bfd9c463766ffde92ac2f5a16a0970b6eef40
+Homepage: http://cyberelk.net/tim/software/pycups/
+Description: Pulse xmpp agent
+
+Package: pulse-xmpp-master-substitute
+Architecture: all
+Version: 2.1.5-1
+Priority: optional
+Section: python
+Source: medulla-agent
+Maintainer: Nicolas Lécureuil <nicolas.lecureuil@siveo.net>
+Installed-Size: 3842
+Depends: jq, python3-xmltodict, python3-slixmpp, python3-netifaces, python3-croniter, python3-psutil, python3-pycryptodome, python3-posix-ipc, python3-sqlalchemy (>= 0.4), python3-geoip
+Filename: ./pulse-xmpp-master-substitute_2.1.5-1_all.deb
+Size: 332912
+MD5sum: 5a0816465931e642f69ae245d0d6aa8c
+SHA1: ddf76b09c3f7a21e4d61e456d2c1553f5e7a104f
+SHA256: 6f6aef76a2a78c7757545b77c79ac77f8eec87eda48ae9a9aca8b433e779d4b8
+SHA512: 4eaf309019b31f36952f353ce204a0dfb58612e166e21b6e3d60375108ce958ea330024190bb3ac4c3cbad5f43caae149cffbff6eca01bbd45edec88fef9d881
+Homepage: http://cyberelk.net/tim/software/pycups/
+Description: Pulse master agent substitute
+
+Package: pulse-xmppmaster-agentplugins
+Architecture: all
+Version: 2.1.5-1
+Priority: optional
+Section: python
+Source: medulla-agent
+Maintainer: Nicolas Lécureuil <nicolas.lecureuil@siveo.net>
+Installed-Size: 710
+Filename: ./pulse-xmppmaster-agentplugins_2.1.5-1_all.deb
+Size: 90040
+MD5sum: 5fa031421dd0343fb873ee1e11f4636c
+SHA1: 72555775eddd9d487219e7cdc8ed57d23f69be43
+SHA256: bed249c1dd9e30be4447fb2e2465999d91d9b74cae0b0f40c3091d1752db47b4
+SHA512: 440c5d5ad42690eff0c422a8d3de53fa1f4795eb172a387ea3381d20fce1c227dc83752a0a2623dea22ee25a8b288cfde35d1ce8b37b3b5a628a065f84323dfd
+Homepage: http://cyberelk.net/tim/software/pycups/
+Description: plugins for pulse xmppmaster
+
